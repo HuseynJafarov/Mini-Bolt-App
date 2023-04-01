@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bolt.Core.Enum
 {
-    internal class ProductCategory
+    public enum ProductCategory
     {
+        Soup=1,
+        Salat,
+        MainFood,
+        Drink
     }
 }

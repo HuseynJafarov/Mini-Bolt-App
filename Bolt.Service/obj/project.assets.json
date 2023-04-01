@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/Bolt.Core.dll": {}
         }
+      },
+      "Bolt.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Bolt.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Bolt.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bolt.Data.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,16 @@
       "type": "project",
       "path": "../Bolt.Core/Bolt.Core.csproj",
       "msbuildProject": "../Bolt.Core/Bolt.Core.csproj"
+    },
+    "Bolt.Data/1.0.0": {
+      "type": "project",
+      "path": "../Bolt.Data/Bolt.Data.csproj",
+      "msbuildProject": "../Bolt.Data/Bolt.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Bolt.Core >= 1.0.0"
+      "Bolt.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Data\\Bolt.Data.csproj",
-      "projectName": "Bolt.Data",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Data\\Bolt.Data.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Service\\Bolt.Service.csproj",
+      "projectName": "Bolt.Service",
+      "projectPath": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Service\\Bolt.Service.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Data\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +71,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Core\\Bolt.Core.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Core\\Bolt.Core.csproj"
+            "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Data\\Bolt.Data.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\Bolt\\Bolt.Data\\Bolt.Data.csproj"
             }
           }
         }

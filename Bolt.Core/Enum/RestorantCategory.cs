@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bolt.Core.Enum
 {
-    public enum ProductCategory
+    public enum RestorantCategory
     {
         Azerbaijan=1,
         Mexico,

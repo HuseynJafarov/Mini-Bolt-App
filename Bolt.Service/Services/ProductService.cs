@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bolt.Data.Repositories
+namespace Bolt.Service.Services
 {
-    public class ProductRespository
+    public class ProductService
     {
     }
 }

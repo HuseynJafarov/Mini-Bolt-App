@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bolt.Core\Bolt.Core.csproj" />
+    <ProjectReference Include="..\Bolt.Data\Bolt.Data.csproj" />
   </ItemGroup>
 
 </Project>
