@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bolt.Data.Repositories
 {
-    internal class ProductRespository
+    public class ProductRespository
     {
     }
 }
