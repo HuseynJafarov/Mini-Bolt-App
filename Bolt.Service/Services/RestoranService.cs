@@ -1,5 +1,7 @@
 ﻿using Bolt.Core.Enum;
 using Bolt.Core.Models;
+using Bolt.Core.Repositeries.RestorantRepositery;
+using Bolt.Data.Repositories.ProductRespository;
 using Bolt.Service.Services.Interface;
 using System;
 using System.Collections.Generic;
@@ -11,34 +13,83 @@ namespace Bolt.Service.Services
 {
     public class RestoranService : IRestoranService
     {
-        public Task<string> CreateAsync(RestorantCategory restoranCategory)
+        private int _id;
+
+        private readonly IRestoranRepository _repository;
+
+        public RestoranService(IRestoranRepository repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
         }
 
-        public Task<List<Restorant>> GetAllAsync()
+
+        public async Task<string> CreateAsync(RestorantCategory restoranCategory)
         {
-            throw new NotImplementedException();
+            Restorant restorant = new Restorant(restoranCategory);
+            restorant.Id = _id;
+            _id++;
+            Console.ForegroundColor = ConsoleColor.Green;
+            await _repository.AddAsync(restorant);
+            return "Succesfully Created";
         }
 
-        public Task<Restorant> GetAsync(int id)
-        {
-            throw new NotImplementedException();
+        public async Task<List<Restorant>> GetAllAsync()
+        { 
+            return  await _repository.GetAllAsync();
         }
 
-        public Task<List<Product>> GetProductByRestoran(string name)
+        public async Task<Restorant> GetAsync(int id)
         {
-            throw new NotImplementedException();
+
+            Restorant restorant = await _repository.GetAsync(m => m.Id == id);
+            if (restorant is null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Restorant Not Found");
+            }
+            return restorant;
         }
 
-        public Task<string> RemoveAsync(int id)
+        public async Task<List<Product>> GetProductByRestoran(string name)
         {
-            throw new NotImplementedException();
+            Restorant restorant = await _repository.GetAsync(a => a.Name == name);
+            if (restorant == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Restoran is not found");
+                return null;
+            }
+            return restorant.ProductList;
         }
 
-        public Task<string> UpdateAsync(int id, RestorantCategory restorantCategory)
+        public async Task<string> RemoveAsync(int id)
         {
-            throw new NotImplementedException();
+            Restorant restorant = await _repository.GetAsync(a => a.Id == id);
+            if (restorant is null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                return "Restoran is not found";
+            }
+
+            await _repository.RemoveAsync(restorant);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            return "Succesfuly removed";
+        }
+
+        public async Task<string> UpdateAsync(int id, RestorantCategory restorantCategory)
+        {
+            Restorant restorant = await _repository.GetAsync(a => a.Id == id);
+            if (restorant is null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                return "Restoran is not found";
+            }
+
+            await _repository.UpdateAsync(restorant);
+            Console.ForegroundColor = ConsoleColor.Green;
+            return "Succesfuly updated";
+
         }
     }
 }

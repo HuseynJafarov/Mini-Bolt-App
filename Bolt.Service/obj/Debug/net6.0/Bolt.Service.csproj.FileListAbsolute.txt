@@ -1,0 +1,5 @@
+C:\Users\HP\Desktop\Bolt\Bolt.Service\obj\Debug\net6.0\Bolt.Service.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Bolt\Bolt.Service\obj\Debug\net6.0\Bolt.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Bolt\Bolt.Service\obj\Debug\net6.0\Bolt.Service.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Bolt\Bolt.Service\obj\Debug\net6.0\Bolt.Service.AssemblyInfo.cs
+C:\Users\HP\Desktop\Bolt\Bolt.Service\obj\Debug\net6.0\Bolt.Service.csproj.CoreCompileInputs.cache

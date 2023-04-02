@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\Bolt\Bolt.Core\bin\Debug\net6.0\Bolt.Core.deps.json
+C:\Users\HP\Desktop\Bolt\Bolt.Core\bin\Debug\net6.0\Bolt.Core.dll
+C:\Users\HP\Desktop\Bolt\Bolt.Core\bin\Debug\net6.0\Bolt.Core.pdb
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\Bolt.Core.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\Bolt.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\Bolt.Core.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\Bolt.Core.AssemblyInfo.cs
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\Bolt.Core.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\Bolt.Core.dll
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\refint\Bolt.Core.dll
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\Bolt.Core.pdb
+C:\Users\HP\Desktop\Bolt\Bolt.Core\obj\Debug\net6.0\ref\Bolt.Core.dll

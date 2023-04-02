@@ -10,6 +10,6 @@ namespace Bolt.Data.Repositories.ProductRespository
 {
     public class RestoranRepository : Repository<Restorant>,IRestoranRepository
     {
-
+        
     }
 }

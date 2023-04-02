@@ -14,5 +14,16 @@ namespace Bolt.Core.Models
         public double Price { get; set; }
         public ProductCategory ProductEnum { get; set; }
         public Restorant Restorant { get; set; }
+
+        public Product(ProductCategory category)
+        {
+            ProductEnum = category;
+        }
+
+        public override string ToString()
+        {
+            return $"ProductName{ProductName} Price{Price} RestoranName{Restorant.Name}";
+        }
+
     }
 }

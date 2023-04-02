@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Bolt.Data/1.0.0": {
+        "dependencies": {
+          "Bolt.Core": "1.0.0"
+        },
+        "runtime": {
+          "Bolt.Data.dll": {}
+        }
+      },
+      "Bolt.Core/1.0.0": {
+        "runtime": {
+          "Bolt.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bolt.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bolt.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
